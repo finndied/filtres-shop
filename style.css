@@ -137,7 +137,7 @@ a {
 
 a:hover {
   transition: all 0.3s ease 0s;
-  color: rgb(70, 129, 210);
+  color: #005e94;
 }
 
 .wrapper {
@@ -161,7 +161,7 @@ a:hover {
 }
 
 .logo:hover {
-  fill: rgb(70, 129, 210);
+  fill: #005e94;
   transition: all 0.3s ease 0s;
 }
 
@@ -212,7 +212,7 @@ a:hover {
 }
 
 .header-basket {
-  margin-left: 30px;
+  margin-left: 60px;
   display: flex;
   align-items: center;
   color: black;
@@ -241,4 +241,80 @@ a:hover {
   width: 27px;
   height: 27px;
   position: relative;
+}
+
+.cart:hover {
+  fill: #005e94;
+  transition: all 0.3s ease 0s;
+}
+
+.header-nav-panel {
+  padding: 40px 60px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.icon-dropdown {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-left: 6px;
+  transform: rotate(90deg);
+}
+
+/*   -   -   -    MAIN   -    -    -    */
+
+.container {
+  margin: 0 auto;
+  padding: 80px 25px;
+}
+
+.section-body {
+  display: inline-flex;
+  
+}
+
+.quality-box {
+  padding: 10px 20px 20px 0px;
+  background-color: #073d5d;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+}
+
+#mid-quality {
+  padding-right: 80px;
+}
+
+.quality-item {
+  text-align: center;
+}
+
+.quality-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.quality-title {
+  font-size: 15px;
+  margin: 3px 0 12px;
+  font-weight: 900;
+}
+
+.quality-description {
+  font-size: 13px;
+  line-height: 15px;
+  margin-left: 15px;
+  margin-right: 20px;
 }
