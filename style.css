@@ -141,13 +141,7 @@ a:hover {
   color: #005e94;
 }
 
-.parallax {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+
 
 .wrapper {
   margin: 0 auto -120px auto;
@@ -335,7 +329,68 @@ a:hover {
   margin-right: 20px;
 }
 
-.reviews {
-  background-color: #ffffff;
-  height: 1920px;
+.hits {
+  margin-top: 100px;
+}
+
+.hits__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.hits__products {
+  display: flex;
+  margin: 0 50px;
+  width: 1080px;
+  
+}
+
+.hits__container > a {
+  display: flex;
+}
+
+
+
+.hits__image {
+  margin: 0 0px;
+}
+
+.hits__description {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  width: 400px;
+}
+
+.hits__article {
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.hits__rating {
+  font-size: 10px;
+  font-weight: 500;
+  margin-bottom: 7px;
+  color: rgb(0, 0, 0);
+}
+
+.hits__price {
+  position: absolute;
+  font-size: 20px;
+  margin-top: 7px;
+}
+
+.hits__button {
+  position: relative;
+  margin-left: 45px;
+  margin-top: 8px;
+}
+
+.hits__button-btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
