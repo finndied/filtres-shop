@@ -10,10 +10,7 @@
     <title>Фильтры</title>
   </head>
   <body>
-    <div class="parallax background" id="background"></div>
     <div class="wrapper">
-    
-    <div class="parallax background-water" id="background-water"></div>
       <div class="header">
         <a href="" class="header-logo">
           <svg display="none">
@@ -93,7 +90,7 @@
         </ul>
       </div>
       <main>
-        <div class="container">
+        <section class="quality">
           <div class="section-body">
             <div class="quality-box">
               <div class="quality-item">
@@ -113,7 +110,7 @@
                 <div class="quality-description">Химическая технология, промышленный дизайн, IT решение-все это мы делаем in house.</div>
               </div>
             </div>
-            <div class="quality-box">
+            <div class="quality-box" id="right-quality">
               <div class="quality-item">
                 <div class="quality-icon">
                   <img alt="benefit" src="/img/quality/3.png" width="70px">
@@ -123,9 +120,19 @@
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </main>
-      <section class="reviews"></section>
+      <section class="hits">
+        <h1 class="hits__title">Лидеры продаж</h1>
+        <div class="hits__container">
+        <div class="hits__image"></div>
+        <div class="hits__description"></div>
+        <div class="hits__article"></div>
+        <div class="hits__reviews"></div>
+        <div class="hits__price"></div>
+        <div class="hits__button"></div>
+      </div>
+      </section>
     </div>
     <script src="index.js"></script>
   </body>

@@ -108,7 +108,7 @@ section {
 body {
   font-family: Noto Sans;
   line-height: 1;
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(255, 255, 255);
 }
 ol,
 ul {
@@ -149,44 +149,29 @@ a:hover {
   height: 100%;
 }
 
-.background {
-  background: url("/img/background-water.jpg");
-  background-size: 110% 110%;
-  z-index: -109;
-}
-
-.background-water {
-  background: url("/img/background.jpg");
-  background-size: 110% 110%;
-  z-index: -100;
-  opacity: 1;
-  
-}
-
 .wrapper {
   margin: 0 auto -120px auto;
   padding: 0;
-  max-width: 1200px;
   min-height: 100%;
   position: relative;
   width: 1200px;
   height: 1200px;
-  
 }
 
 .header {
   padding-top: 20px;
   display: flex;
+  width: 1200px;
+  background-color: white;
 }
 
 .logo {
   width: 50px;
   height: 50px;
-  fill: rgb(255, 255, 255);
 }
 
 .logo:hover {
-  fill: black;
+  fill: #005e94;
   transition: all 0.3s ease 0s;
 }
 
@@ -235,7 +220,7 @@ a:hover {
 
 .header-button:hover {
   transition: all 0.3s ease 0s;
-  background-color: rgba(255, 255, 255, 0.148);
+  color: #005e94;
 }
 
 .header-basket {
@@ -276,9 +261,7 @@ a:hover {
 }
 
 .header-nav-panel {
-  padding: 40px 60px;
-  background-color: #ffffff;
-  width: 1080px;
+  padding: 40px 0px;
   margin: 0 auto;
 }
 
@@ -303,8 +286,7 @@ a:hover {
 
 /*   -   -   -    MAIN   -    -    -    */
 
-.container {
-  width: 1200px;
+.quality {
 }
 
 .section-body {
@@ -317,10 +299,15 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   color: black;
+  margin: 1px;
+  width: 315px;
 }
 
 #mid-quality {
-  padding-right: 80px;
+  margin-right: 80px;
+  margin-left: 80px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .quality-item {
@@ -349,6 +336,6 @@ a:hover {
 }
 
 .reviews {
-background-color: #ffffff;
-height: 1920px;
+  background-color: #ffffff;
+  height: 1920px;
 }
