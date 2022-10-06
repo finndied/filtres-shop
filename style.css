@@ -149,10 +149,9 @@ a:hover {
 }
 
 .header {
-  padding-top: 20px;
+  padding: 10px 0;
   display: flex;
   background-color: white;
-  margin-bottom: 20px;
 }
 
 .header-logo {
@@ -171,7 +170,6 @@ a:hover {
 
 .header-contacts {
   display: flex;
-  margin-left: 33px;
   margin-right: 60px;
   align-items: center;
 }
@@ -203,8 +201,8 @@ a:hover {
   cursor: pointer;
   border: none;
   border-radius: 7px;
-  height: 20px;
-  width: 79px;
+  height: 23px;
+  width: 78px;
   position: absolute;
   margin-left: 534px;
   background-color: rgb(255, 255, 255);
@@ -264,7 +262,7 @@ a:hover {
   color: white;
 }
 .header-nav-child > a:hover {
-  color:#005e94;
+  color: #005e94;
 }
 
 .header-nav {
