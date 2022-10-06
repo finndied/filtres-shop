@@ -142,19 +142,21 @@ a:hover {
 }
 
 .wrapper {
-  margin: 0 auto -120px auto;
   padding: 0;
   min-height: 100%;
   position: relative;
-  width: 1200px;
   height: 1200px;
 }
 
 .header {
   padding-top: 20px;
   display: flex;
-  width: 1200px;
   background-color: white;
+  margin-bottom: 20px;
+}
+
+.header-logo {
+  margin-left: 200px;
 }
 
 .logo {
@@ -186,15 +188,15 @@ a:hover {
 .header-input {
   background-color: rgb(255, 255, 255);
   padding-left: 10px;
-  width: 600px;
-  height: 30px;
+  width: 598.4px;
+  height: 29px;
   border-radius: 100px;
   position: relative;
   outline: none;
   border: none;
   font-weight: 600;
   font-size: 15px;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 
 .header-button {
@@ -253,8 +255,16 @@ a:hover {
 }
 
 .header-nav-panel {
-  padding: 40px 0px;
   margin: 0 auto;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.header-nav-child > a {
+  color: white;
+}
+.header-nav-child > a:hover {
+  color:#005e94;
 }
 
 .header-nav {
@@ -279,6 +289,8 @@ a:hover {
 /*   -   -   -    MAIN   -    -    -    */
 
 .quality {
+  margin-left: 200px;
+  margin-top: 60px;
 }
 
 .section-body {
@@ -333,6 +345,10 @@ a:hover {
 
 .hits {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .hits__title {
@@ -344,12 +360,15 @@ a:hover {
 
 .hits__products {
   display: flex;
-  margin: 0 50px;
-  width: 1080px;
+  margin-left: 100px;
 }
 
 .hits__container > a {
   display: flex;
+}
+
+.hits__container {
+  margin-right: 100px;
 }
 
 .hits__image {
@@ -360,7 +379,8 @@ a:hover {
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 7px;
-  width: 400px;
+  width: 300px;
+  word-break: break-all;
 }
 
 .hits__article {
