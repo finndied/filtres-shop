@@ -412,3 +412,33 @@ a:hover {
   border: none;
   cursor: pointer;
 }
+
+/* ----------------- SERVICES ----------------- */
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__block {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px 10px;
+  background-color: #f2f2f2;
+  max-width: 700px;
+}
+
+.services__title {
+  text-align: center;
+}
+
+.services__description {
+  
+}
+
+.services__btn {
+  text-align: center;
+}
+
+.services__image {
+}
