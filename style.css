@@ -484,3 +484,75 @@ a:hover {
   bottom: 0;
   max-width: 100%;
 }
+
+/* -------------------- REVIEWS ------------------ */
+
+#slider-2,
+#slider-3,
+#slider-4 {
+  display: none;
+}
+
+.reviews {
+  background-color: #f2f2f2;
+  height: 500px;
+  position: relative;
+}
+
+.reviews__title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.reviews__slider {
+  display: flex;
+}
+
+.reviews__image {
+  position: absolute;
+  margin-left: 140px;
+}
+
+.reviews__text {
+  font-weight: 300;
+  margin: 20px auto;
+  text-align: center;
+  max-width: 600px;
+  font-size: 18px;
+}
+
+.reviews__name {
+  margin: 20px 15px;
+  text-align: start;
+  font-weight: 800;
+}
+
+.reviews__prebtn {
+  position: absolute;
+  left: 0;
+  margin-left: 20px;
+  margin-top: 120px;
+}
+.reviews__nextbtn {
+  position: absolute;
+  right: 0;
+  margin-top: 120px;
+}
+
+.reviews__prebtn,
+.reviews__nextbtn {
+  background-color: none;
+  border-radius: 30px;
+  padding: 6px 15px;
+  font-size: 20px;
+}
+
+.reviews__prebtn,
+.reviews__nextbtn:hover {
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
