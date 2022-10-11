@@ -469,8 +469,6 @@ a:hover {
   border-radius: 25px;
 }
 
-
-
 .services__image {
   position: absolute;
   bottom: 0;
@@ -487,16 +485,39 @@ a:hover {
 
 /* -------------------- REVIEWS ------------------ */
 
-#slider-2,
-#slider-3,
+#slider-1 {
+  display: flex;
+}
+
+#slider-2 {
+  display: none;
+}
+#slider-3 {
+  display: none;
+}
 #slider-4 {
   display: none;
 }
+
 
 .reviews {
   background-color: #f2f2f2;
   height: 500px;
   position: relative;
+  z-index: -3;
+
+}
+
+
+
+.reviews__background {
+  background-image: url("/img/reviews/5.png");
+  width: 1900px;
+  height: 500px;
+  opacity: .1;
+  position: absolute;
+  z-index: -1;
+  
 }
 
 .reviews__title {
@@ -508,12 +529,15 @@ a:hover {
 }
 
 .reviews__slider {
-  display: flex;
+  display: none;
+  position: relative;
 }
 
 .reviews__image {
+  margin-left: 150px;
   position: absolute;
-  margin-left: 140px;
+  z-index: -2;
+  
 }
 
 .reviews__text {
@@ -530,29 +554,3 @@ a:hover {
   font-weight: 800;
 }
 
-.reviews__prebtn {
-  position: absolute;
-  left: 0;
-  margin-left: 20px;
-  margin-top: 120px;
-}
-.reviews__nextbtn {
-  position: absolute;
-  right: 0;
-  margin-top: 120px;
-}
-
-.reviews__prebtn,
-.reviews__nextbtn {
-  background-color: none;
-  border-radius: 30px;
-  padding: 6px 15px;
-  font-size: 20px;
-}
-
-.reviews__prebtn,
-.reviews__nextbtn:hover {
-  background-color: white;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-}
