@@ -499,25 +499,20 @@ a:hover {
   display: none;
 }
 
-
 .reviews {
   background-color: #f2f2f2;
   height: 500px;
   position: relative;
   z-index: -3;
-
 }
-
-
 
 .reviews__background {
   background-image: url("/img/reviews/5.png");
   width: 1900px;
   height: 500px;
-  opacity: .1;
+  opacity: 0.1;
   position: absolute;
   z-index: -1;
-  
 }
 
 .reviews__title {
@@ -537,7 +532,6 @@ a:hover {
   margin-left: 150px;
   position: absolute;
   z-index: -2;
-  
 }
 
 .reviews__text {
@@ -554,3 +548,77 @@ a:hover {
   font-weight: 800;
 }
 
+/* --------------- MAIL ---------------- */
+
+.mail {
+  margin-top: 200px;
+}
+
+.mail__title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+.mail__subtitle {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.mail__form {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mail__input {
+  background-color: #f2f2f2;
+  width: 600px;
+  padding: 20px 0;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding-left: 20px;
+}
+
+.mail__button {
+  position: absolute;
+  background-color: black;
+  color: #fff;
+  margin-left: 450px;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 14px 22px;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  border-radius: 26px 2px 26px 2px;
+  cursor: pointer;
+}
+
+.mail__button:hover {
+  background-color: rgb(29, 29, 29);
+  transition: all 0.3s ease 0s;
+}
+
+/* ----------- FOOTER ----------- */
+
+.footer {
+  margin-top: 150px;
+  background-color: #f2f2f2;
+  height: 300px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+}
