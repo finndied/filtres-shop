@@ -137,11 +137,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  transition: all 0.3s ease 0s;
-  color: #005e94;
-}
-
 .wrapper {
   max-width: 1920px;
   margin: 0 auto;
@@ -163,7 +158,7 @@ a:hover {
 }
 
 .logo:hover {
-  fill: #005e94;
+  fill: #565555;
   transition: all 0.3s ease 0s;
 }
 
@@ -175,6 +170,11 @@ a:hover {
 
 .header-phone {
   margin-left: 53px;
+}
+
+.header-phone > a:hover {
+  transition: all 0.3s ease 0s;
+  color: #565555;
 }
 
 .header-search {
@@ -212,7 +212,7 @@ a:hover {
 
 .header-button:hover {
   transition: all 0.3s ease 0s;
-  color: #005e94;
+  color: #565555;
 }
 
 .header-basket {
@@ -248,7 +248,7 @@ a:hover {
 }
 
 .cart:hover {
-  fill: #005e94;
+  fill: #565555;
   transition: all 0.3s ease 0s;
 }
 
@@ -262,7 +262,8 @@ a:hover {
   color: white;
 }
 .header-nav-child > a:hover {
-  color: #005e94;
+  color: #cdcaca;
+  transition: all 0.3s ease 0s;
 }
 
 .header-nav {
@@ -469,6 +470,11 @@ a:hover {
   border-radius: 25px;
 }
 
+.services__btn:hover {
+  transition: all 0.3s ease 0s;
+  background-color: rgb(29, 29, 29);
+}
+
 .services__image {
   position: absolute;
   bottom: 0;
@@ -551,7 +557,7 @@ a:hover {
 /* --------------- MAIL ---------------- */
 
 .mail {
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .mail__title {
@@ -621,4 +627,74 @@ a:hover {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 5px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.footer__title {
+  margin: 30px 0 10px 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer__links {
+  font-size: 15px;
+  font-weight: 400;
+  padding: 3px 0;
+}
+
+.footer__links:hover {
+  transition: all 0.1s ease 0s;
+  font-weight: 600;
+}
+
+#social {
+  display: block;
+}
+
+.facebook {
+  width: 50px;
+  height: 50px;
+}
+
+.facebook:hover {
+  fill: rgb(61, 61, 61);
+  transition: all 0.3s ease 0s;
+}
+
+.inst {
+  width: 50px;
+  height: 50px;
+}
+
+.inst:hover {
+  fill: rgb(61, 61, 61);
+  transition: all 0.3s ease 0s;
+}
+
+.youtube {
+  width: 50px;
+  height: 50px;
+}
+.youtube:hover {
+  fill: rgb(61, 61, 61);
+  transition: all 0.3s ease 0s;
+}
+
+.footer__under-block {
+  display: flex;
+  border-top: 1px solid rgb(182, 178, 178);
+  padding: 40px 0;
+  justify-content: space-around;
+  margin: 40px 65px 0px 65px;
+}
+
+.footer__rights,
+.footer__contract {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.footer__contract:hover {
+  color: #565555;
 }
