@@ -15,7 +15,7 @@
   <body>
     <div class="wrapper">
       <div class="header">
-        <a href="" class="header-logo">
+        <a href="" class="header__logo">
           <svg display="none">
             <symbol id="logo" viewBox="0 0 79.536 79.536">
               <g>
@@ -33,31 +33,32 @@
             <use href="#logo"></use>
           </svg>
         </a>
-        <div class="header-contacts">
-          <div class="header-phone">
-            <a href="tel:+380443334404" class="binct-phone-number-1"
+        <div class="header__contacts">
+          <div class="header__phone">
+            <a href="tel:+380443334404"
               >(044) 333-44-04</a
             >
           </div>
-          <div class="header-phone">
-            <a href="tel:+380504450811" class="binct-phone-number-2"
+          <div class="header__phone">
+            <a href="tel:+380504450811"
               >(050) 445-08-11</a
             >
           </div>
         </div>
-        <div class="header-search">
+        <div class="header__search">
           <input
             autocomplete="off"
             type="text"
             name="form[]"
+            maxlength="50"
             data-error="Ошибка"
             placeholder="Напишите, что желаете найти"
-            class="header-input"
+            class="header__input"
           />
-          <button class="header-button" type="submit">Поиск</button>
+          <button class="header__button" type="submit">Поиск</button>
         </div>
-        <div class="header-basket">
-          <a href="" class="header-cart">
+        <div class="header__basket">
+          <a href="" class="header__cart">
             <svg display="none">
               <symbol id="cart" viewBox="0 0 59 59">
                 <g>
@@ -77,78 +78,76 @@
               <use href="#cart"></use>
             </svg>
           </a>
-          <span class="header-counter">0</span>
+          <span class="header__counter">0</span>
         </div>
       </div>
-      <div class="header-nav-panel">
-        <ul class="header-nav">
-          <li class="header-nav-child">
+      <div class="header__nav-panel">
+        <ul class="header__nav">
+          <li class="header__nav-child">
             <a href="">
               <span>Питьевая вода</span>
-              <i class="icon-dropdown">&#8250;</i>
+              <i class="icon__dropdown">&#8250;</i>
             </a>
           </li>
-          <li class="header-nav-child">
+          <li class="header__nav-child">
             <a href="">
               <span>Бытовая вода</span>
-              <i class="icon-dropdown">&#8250;</i>
+              <i class="icon__dropdown">&#8250;</i>
             </a>
           </li>
-          <li class="header-nav-child">
+          <li class="header__nav-child">
             <a href="">
               <span>Сменные картриджи и аксессуары</span>
-              <i class="icon-dropdown">&#8250;</i>
+              <i class="icon__dropdown">&#8250;</i>
             </a>
           </li>
-          <li class="header-nav-child">
+          <li class="header__nav-child">
             <a href="">
               <span>Бассейны, оборудования и химия</span>
-              <i class="icon-dropdown">&#8250;</i>
+              <i class="icon_dropdown">&#8250;</i>
             </a>
           </li>
         </ul>
       </div>
-      <main>
         <section class="quality">
-          <div class="section-body">
-            <div class="quality-box">
-              <div class="quality-item">
-                <div class="quality-icon">
+          <div class="quality__container">
+            <div class="quality__box">
+              <div class="quality__item">
+                <div class="quality__icon">
                   <img alt="benefit" src="/img/quality/1.png" width="70px" />
                 </div>
-                <div class="quality-title">Официальный магазин</div>
-                <div class="quality-description">
+                <div class="quality__title">Официальный магазин</div>
+                <div class="quality__description">
                   Мы производим фильтры для очистки воды, и продаем их в более
                   чем 60 стран мира
                 </div>
               </div>
             </div>
-            <div class="quality-box" id="mid-quality">
-              <div class="quality-item">
-                <div class="quality-icon">
+            <div class="quality__box">
+              <div class="quality__item">
+                <div class="quality__icon">
                   <img alt="benefit" src="/img/quality/2.png" width="70px" />
                 </div>
-                <div class="quality-title">Собственное производство</div>
-                <div class="quality-description">
+                <div class="quality__title">Собственное производство</div>
+                <div class="quality__description">
                   Химическая технология, промышленный дизайн, IT решение-все это
                   мы делаем in house.
                 </div>
               </div>
             </div>
-            <div class="quality-box" id="right-quality">
-              <div class="quality-item">
-                <div class="quality-icon">
+            <div class="quality__box">
+              <div class="quality__item">
+                <div class="quality__icon">
                   <img alt="benefit" src="/img/quality/3.png" width="70px" />
                 </div>
-                <div class="quality-title">Международное качество</div>
-                <div class="quality-description">
+                <div class="quality__title">Международное качество</div>
+                <div class="quality__description">
                   Подтверждено сертификатами EAC, NSF и TÜV SÜD
                 </div>
               </div>
             </div>
           </div>
         </section>
-      </main>
       <section class="hits">
         <h1 class="hits__title">Лидеры продаж</h1>
         <div class="hits__products">
@@ -292,7 +291,7 @@
           <div class="mail__title">Есть вопросы?</div>
           <div class="mail__subtitle">Свяжитесь с нами!</div>
             <div class="mail__form"><button type="submit" class="mail__button">Отправить</button><input autocomplete="off" type="" name="form[]"
-            data-error="Ошибка" placeholder="Введите номер" class="mail__input">
+            data-error="Ошибка" maxlength="12" placeholder="Введите номер" class="mail__input">
         </div>
       </section>
       <footer class="footer">
@@ -307,8 +306,8 @@
           <div class="footer__block">
           <div class="footer__title">Контактная информация</div>
             <a href="" class="footer__links">Купить вареники</a>
-            <a href="" class="footer__links">+38 (044) 333-44-04</a>
-            <a href="" class="footer__links">+38 (050) 445-08-11</a>
+            <a href="tel:+380443334404" class="footer__links">+38 (044) 333-44-04</a>
+            <a href="tel:+380504450811" class="footer__links">+38 (050) 445-08-11</a>
 
         </div>
           <div class="footer__block" id="social">
