@@ -142,6 +142,9 @@ a {
   margin: 0 auto;
 }
 
+
+/* ------------- HEADER -------------- */
+
 .header {
   padding: 10px 0;
   display: flex;
@@ -252,6 +255,9 @@ a {
   transition: all 0.3s ease 0s;
 }
 
+
+/* -------------- HEADER-NAV --------------- */
+
 .header-nav-panel {
   margin: 0 auto;
   background-color: black;
@@ -284,7 +290,7 @@ a {
   transform: rotate(90deg);
 }
 
-/*   -   -   -    MAIN   -    -    -    */
+/*  ----------- QUALITY -------------  */
 
 .quality {
   display: flex;
@@ -341,6 +347,9 @@ a {
   margin-left: 15px;
   margin-right: 20px;
 }
+
+
+/* ------------ HITS ----------- */
 
 .hits {
   margin-top: 100px;
