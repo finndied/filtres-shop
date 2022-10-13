@@ -142,7 +142,6 @@ a {
   margin: 0 auto;
 }
 
-
 /* ------------- HEADER -------------- */
 
 .header {
@@ -252,19 +251,26 @@ a {
   transition: all 0.3s ease 0s;
 }
 
-
 /* -------------- HEADER-NAV --------------- */
 
 .header__nav-panel {
   margin: 0 auto;
   background-color: black;
-  padding: 10px 0;
+  padding: 15px 0;
 }
 
-.header__nav-child > a {
+.header__nav-child  {
   color: white;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  }
+
+.header__nav-child > span {
+  user-select: none;
 }
-.header__nav-child > a:hover {
+
+.header__nav-child > span:hover {
   color: #cdcaca;
   transition: all 0.3s ease 0s;
 }
@@ -285,7 +291,66 @@ a {
   vertical-align: middle;
   margin-left: 6px;
   transform: rotate(90deg);
+  transition: all 0.3s ease 0s;
 }
+
+.icon__dropdown.open {
+  transform: rotate(270deg);
+  transition: all 0.3s ease 0s;
+}
+
+/* ---------- NAV-SUBMENU ----------- */
+
+.header__nav-submenu-block.open {
+  display: flex;
+  cursor:auto;
+}
+.header__nav-submenu.open {
+  /* display: none; */
+  width: 100%;
+  height: 300px;
+}
+
+.header__nav-submenu-block {
+  margin-top: 15px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 1363px;
+  display: none;
+  position: absolute;
+}
+
+.header__nav-submenu-column {
+  width: 300px;
+}
+
+.header__nav-submenu-title {
+  color: white;
+  text-transform: uppercase;
+  margin-top: 40px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.header__nav-submenu-list {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.header__nav-submenu-list li {
+  margin-top: 20px;
+}
+
+.header__nav-submenu-list li > a  {
+  color: white;
+  font-weight: 200;
+  font-size: 16px;
+}
+.header__nav-submenu-list li > a:hover  {
+  transition: all 0.1s ease 0s;
+  color: #cdcaca;
+}
+
 
 /*  ----------- QUALITY -------------  */
 
@@ -296,7 +361,7 @@ a {
 }
 
 .quality__container {
-  display:inline-flex;
+  display: inline-flex;
 }
 
 .quality__box {
@@ -335,7 +400,6 @@ a {
   margin-left: 15px;
   margin-right: 20px;
 }
-
 
 /* ------------ HITS ----------- */
 
