@@ -16,7 +16,6 @@ const block4 = document.getElementById("block4");
 
 const items = document.querySelectorAll(".header__nav-child");
 for (let i = 0; i < items.length; i++) {
-  console.log(items);
 }
 
 // Функции для раскрывания сабменю при наведении
@@ -67,17 +66,15 @@ items[3].onmouseout = function () {
   block4.classList.remove("open");
 };
 
-// items[2].onclick = function menu1() {
-//   submenu.classList.toggle("open");
-//   subArrow.classList.toggle("open");
-//   submenuBlock.classList.toggle("open");
-// }
+// Добавление товаров в корзину
 
-// items[3].onclick = function menu1() {
-//   submenu.classList.toggle("open");
-//   subArrow.classList.toggle("open");
-//   submenuBlock.classList.toggle("open");
-// }
+document.addEventListener('click', event => {
+  const type = event.target.dataset.type 
+
+  if (type === 'add') {
+    console.log('работает')
+  }
+})
 
 // SLIDER ------------------------------------------------------------
 
