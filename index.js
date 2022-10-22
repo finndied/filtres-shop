@@ -15,8 +15,7 @@ const block3 = document.getElementById("block3");
 const block4 = document.getElementById("block4");
 
 const items = document.querySelectorAll(".header__nav-child");
-for (let i = 0; i < items.length; i++) {
-}
+for (let i = 0; i < items.length; i++) {}
 
 // Функции для раскрывания сабменю при наведении
 
@@ -66,15 +65,80 @@ items[3].onmouseout = function () {
   block4.classList.remove("open");
 };
 
-// Добавление товаров в корзину
+// Открытие корзины
+/* const cartItems = document.querySelector(".basket-menu__items")
 
-document.addEventListener('click', event => {
-  const type = event.target.dataset.type 
+const cartOpen = document.querySelector(".header__basket-menu"); */
 
-  if (type === 'add') {
-    console.log('работает')
-  }
-})
+function createCart() {
+  const cart = document.createElement("div");
+  const field = document.createElement("div");
+  const heading = document.createElement("div");
+  const closeBtn = document.createElement("button");
+
+  const menuBuy = document.createElement("div");
+  const totalPrice = document.createElement("div");
+  const buyBtn = document.createElement("button");
+
+  cart.classList.add("header__basket-menu");
+  field.classList.add("basket-menu__items");
+  closeBtn.classList.add("basket-menu__close");
+
+  menuBuy.classList.add("basket-menu__buy");
+  totalPrice.classList.add("basket-menu__total");
+  buyBtn.classList.add("basket-menu__button");
+
+  heading.classList.add("basket-menu__title");
+  heading.textContent = "Корзина";
+  closeBtn.textContent = "X";
+  totalPrice.textContent = "Общая стоимость: ";
+  buyBtn.textContent = "оформить заказ";
+  document.body.appendChild(cart);
+  cart.appendChild(heading);
+  cart.appendChild(closeBtn);
+  cart.appendChild(field);
+  cart.appendChild(menuBuy);
+  cart.appendChild(totalPrice);
+  cart.appendChild(buyBtn);
+
+  const cartBtn = document.querySelector(".header__cart");
+  cartBtn.onclick = function () {
+    cart.classList.toggle("open");
+    event.preventDefault();
+  };
+
+  closeBtn.onclick = function () {
+    cart.classList.toggle("open");
+    event.preventDefault();
+  };
+}
+
+createCart();
+
+const hits = document.querySelectorAll(".hits__container");
+const hitsBtn = document.querySelectorAll(".hits__button-btn");
+
+hitsBtn.forEach(function (item, i) {
+  item.addEventListener("click", function () {
+    const item = hits[i].cloneNode(true);
+    const field = document.querySelector(".basket-menu__items");
+    const hitsBtn = item.querySelector(".hits__button-btn");
+    const hitsArticle = item.querySelector(".hits__article");
+    const hitsRating = item.querySelector(".hits__rating");
+    const hitsPrice = item.querySelector(".hits__price");
+    const hitsDescription = item.querySelector(".hits__description");
+    const hitsImage = item.querySelector(".hits__image");
+    const hitsBlock = item.querySelector(".hits__block");
+    hitsBtn.style.display = "none";
+    hitsImage.classList.toggle("open");
+    hitsBlock.classList.toggle("open");
+    hitsDescription.classList.toggle("open");
+    hitsArticle.style.display = "none";
+    hitsRating.style.display = "none";
+    hitsPrice.classList.toggle("open");
+    field.appendChild(item);
+  });
+});
 
 // SLIDER ------------------------------------------------------------
 
