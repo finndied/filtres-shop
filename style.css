@@ -240,11 +240,11 @@ a {
   height: 16px;
   border-radius: 50%;
   background: #fff;
-  border: 2px solid #838181;
+  border: 1px solid #838181;
   align-items: center;
   justify-content: center;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 400;
   line-height: 16px;
   display: inline-flex;
   flex-shrink: 0;
@@ -330,18 +330,6 @@ a {
   margin-left: 70px;
 }
 
-.basket-menu__delete {
-  border: 1px solid black;
-  background-color: white;
-  border-radius: 20px;
-  text-transform: uppercase;
-  padding: 3px;
-  font-size: 11px;
-  font-weight: 200;
-  cursor: pointer;
-  padding: 3px 6px;
-  transition: all 0.3s ease 0s;
-}
 
 .basket-menu__price {
   display: flex;
@@ -350,10 +338,10 @@ a {
   margin-left: 30px;
 }
 
-.basket-menu__delete:hover {
+/* .basket-menu__delete:hover {
   background-color: #f2f2f2;
   border-radius: 6px;
-}
+} */
 
 .basket-menu__quantity {
   position: absolute;
@@ -378,6 +366,26 @@ a {
   margin-left: 100px;
   margin-top: -37px;
   font-weight: 300;
+}
+
+.basket-menu__delete {
+  position: absolute;
+  right: 0;
+  border: 1px solid black;
+  margin-right: 250px;
+  margin-top: -43px;
+  background-color: white;
+  border-radius: 0px 15px 0px;
+  text-transform: uppercase;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 200;
+  cursor: pointer;
+  transition: border-radius 0.3s;
+}
+
+.basket-menu__delete:hover {
+  border-radius: 2px 0px 2px;
 }
 
 .basket-menu__button {
@@ -406,6 +414,7 @@ a {
   margin: 0 auto;
   background-color: #f2f2f2;
   padding: 15px 0;
+  margin-bottom: 60px;
 }
 
 .header__nav-child {
@@ -514,7 +523,7 @@ a {
 .quality {
   display: flex;
   justify-content: center;
-  margin-top: 60px;
+  margin-bottom: 100px; 
 }
 
 .quality__container {
@@ -569,10 +578,14 @@ a {
   width: 150px;
 }
 
+.basket-menu__delete.open >button {
+  display: block;
+}
+
 .hits__description.open {
   display: flex;
   font-weight: 600;
-  width: 350px;
+  width: 320px;
   height: 10px;
   margin-top: 45px;
   margin-left: 15px;
@@ -589,7 +602,6 @@ a {
 /* ------------ HITS ----------- */
 
 .hits {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -670,13 +682,13 @@ a {
   padding: 1px 6px 0px 6px;
   cursor: pointer;
   position: absolute;
-  /* margin-left: 100px; */
   right: 0;
+  transition: all 0.3s ease 0s;
+
 }
 
 .hits__button-btn:hover {
-  transition: all 0.3s ease 0s;
-  background-color: rgb(244, 244, 244);
+  border-radius: 2px 2px 2px 25px;
 }
 
 .hits__button-btn > .cart {
