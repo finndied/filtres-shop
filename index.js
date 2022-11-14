@@ -1,5 +1,24 @@
 "use strict";
 
+// BURGER ------------------------------------------------------------
+
+const menuBtn = document.querySelector(".menu-btn");
+let menuOpen = false;
+menuBtn.addEventListener("click", () => {
+  if (!menuOpen) {
+    menuBtn.classList.add("open");
+    menuOpen = true;
+  } else {
+    menuBtn.classList.remove("open");
+    menuOpen = false;
+  }
+});
+
+const navMenu = document.querySelector(".header__nav-panel");
+menuBtn.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+});
+
 // NAV-SUBMENU -------------------------------------------------------
 
 const submenu = document.querySelector(".header__nav-submenu");
@@ -87,7 +106,7 @@ function createCart() {
   heading.textContent = "Корзина";
   closeBtn.textContent = "X";
   hitsBtnDelete.textContent = "Очистить корзину";
-  totalPrice.textContent = "Общая стоимость: ";
+  totalPrice.textContent = `Общая стоимость: `;
   buyBtn.textContent = "оформить заказ";
 
   document.body.appendChild(cart);
@@ -153,6 +172,37 @@ hitsBtnDelete.forEach(function (item, i) {
     itemChild.remove(itemChild);
   });
 });
+
+// Счетчик товаров
+// const counter = document.querySelector(".header__counter");
+
+// function updateCounter() {
+//   counter.innerText = ы;
+// }
+
+// Общая стоимость товаров
+
+// let price = 0;
+// const totalPrice = () => {
+//   totalPrice.textContent = `${price}$`;
+//   console.log(price)
+// };
+// totalPrice();
+
+// const init = () => {
+//   let totalCost = 0;
+
+//   [...document.querySelectorAll('.hits__block')].forEach((hitsBlock) => {
+//     totalCost += hitsBlock.querySelector('.')
+//   })
+// };
+
+// init();
+
+// totalPrice = Number(totalPrice);
+
+// let currentPrice
+
 // SLIDER ------------------------------------------------------------
 
 const slider2 = setInterval(function (slider2) {
