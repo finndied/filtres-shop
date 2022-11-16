@@ -429,14 +429,21 @@ a {
 @media (min-width: 200px) and (max-width: 766.98px) {
   .header__basket-menu.open {
     width: 320px;
-    margin: 120px 12%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -215px 0 0 -155px;
     overflow-x: hidden;
   }
 }
 @media (min-width: 767px) and (max-width: 1300px) {
   .header__basket-menu.open {
     width: 650px;
-    margin: 120px 12%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -251px 0 0 -325px;
+    overflow-x: hidden;
   }
 }
 
