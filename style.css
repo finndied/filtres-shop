@@ -1403,7 +1403,7 @@ a {
 
 @media (min-width: 200px) and (max-width: 766.98px) {
   .footer__under-block {
-    margin: 40px -2px 0px -9px;
+    margin: 40px 0px 0px 0px;
   }
 }
 @media (min-width: 767px) and (max-width: 1300px) {
