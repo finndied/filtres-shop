@@ -603,6 +603,7 @@ a {
     position: absolute;
     translate: -700px;
     margin-top: -70px;
+    margin-left: -10px;
   }
 }
 @media (min-width: 767px) and (max-width: 1300px) {
