@@ -294,7 +294,7 @@ a {
 
 @media (min-width: 200px) and (max-width: 766.98px) {
   .header__input {
-    width: 198.4px;
+    width: 202.4px;
     height: 25px;
     font-size: 9.5px;
   }
@@ -315,6 +315,7 @@ a {
   background-color: white;
   font-weight: 600;
   font-size: 14px;
+  color: black;
 }
 
 @media (min-width: 200px) and (max-width: 766.98px) {
